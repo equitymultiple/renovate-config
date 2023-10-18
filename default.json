@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":dependencyDashboard"
+  ],
+  "packageRules": [
+    {
+      "groupName": "All patch dependencies",
+      "groupSlug": "all-patch-dependencies",
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["patch"],
+      "schedule": [
+        "every week on Tuesday"
+      ]
+    },
+    {
+      "groupName": "All minor dependencies",
+      "groupSlug": "all-minor-dependencies",
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["minor"],
+      "schedule": [
+        "every 2 weeks on Thursday"
+      ]
+    }
+  ]
+}
+
