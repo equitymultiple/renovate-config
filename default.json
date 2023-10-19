@@ -22,6 +22,13 @@
       "schedule": [
         "every 2 weeks on Thursday"
       ]
+    },
+    {
+      "schedule": [
+        "every 3 months on the first day of the month"
+      ],
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["major"]
     }
   ]
 }
