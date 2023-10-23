@@ -11,7 +11,7 @@
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": ["patch"],
       "schedule": [
-        "on Friday"
+        "on Tuesday"
       ]
     },
     {
