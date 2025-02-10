@@ -24,11 +24,13 @@
       ]
     },
     {
+      "groupName": "All major dependencies",
+      "groupSlug": "all-major-dependencies",
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["major"],
       "schedule": [
         "every 3 months on the first day of the month"
-      ],
-      "matchPackagePatterns": ["*"],
-      "matchUpdateTypes": ["major"]
+      ]
     }
   ]
 }
