@@ -6,6 +6,12 @@
   ],
   "packageRules": [
     {
+      "internalChecksFilter": "strict",
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days",
+      "prCreation": "not-pending"
+    },
+    {
       "groupName": "All patch dependencies",
       "groupSlug": "all-patch-dependencies",
       "matchPackagePatterns": ["*"],
@@ -26,8 +32,10 @@
     {
       "groupName": "All major dependencies",
       "groupSlug": "all-major-dependencies",
+      "internalChecksFilter": "strict",
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": ["major"],
+      "minimumReleaseAge": "90 days",
       "schedule": [
         "every 3 months on the first day of the month"
       ]
